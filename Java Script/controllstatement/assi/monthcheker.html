@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season checker</title>
+</head>
+<body>
+    <script>
+        let a,str;
+        a=Number(prompt("Enter a month"));
+        switch(a){
+            case 11: case 12: case 1: case 2:
+            str="Winter";
+            break;
+            case 3: case 4: case 5: case 6:
+            str="Summer";
+            break;
+            case 7: case 8: case 9: case 10:
+            str="Rainly";
+            break;
+            default:
+                str="You entered a wrong month";
+        }
+        document.write(`${str}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition statement</title>
+</head>
+<body>
+    <script>
+        let a,str;
+         a=prompt("enter a number:");
+        if(isNaN(a)==false){
+         str= a % 2==0 ?  "number is even" : "Number is odd";
+        }
+        else{
+            str="You did not enter a number";
+        }
+      document.write(`${str}`);
+    </script>
+</body>
+</html>

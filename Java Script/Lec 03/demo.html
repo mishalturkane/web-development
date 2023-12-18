@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #87CEEB; /* Sky Blue */
+            margin: 0;
+        }
+
+        .cat {
+            position: relative;
+            width: 200px;
+            height: 120px;
+            background-color: #FFD700; /* Gold */
+            border-radius: 20px 20px 0 0;
+            overflow: hidden;
+        }
+
+        .head {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-color: #FFD700; /* Gold */
+            border-radius: 50%;
+            top: -40px;
+            left: 60px;
+        }
+
+        .eye {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            border-radius: 50%;
+            top: 25px;
+            left: 80px;
+        }
+
+        .ear-left, .ear-right {
+            position: absolute;
+            width: 40px;
+            height: 60px;
+            background-color: #FFD700; /* Gold */
+            border-radius: 50%;
+            top: -60px;
+        }
+
+        .ear-left {
+            left: 10px;
+            transform: rotate(15deg);
+        }
+
+        .ear-right {
+            left: 60px;
+            transform: rotate(-15deg);
+        }
+
+        .body {
+            position: absolute;
+            width: 140px;
+            height: 80px;
+            background-color: #FFD700; /* Gold */
+            top: 20px;
+            left: 30px;
+        }
+
+        .tail {
+            position: absolute;
+            width: 20px;
+            height: 80px;
+            background-color: #FFD700; /* Gold */
+            border-radius: 10px;
+            top: 20px;
+            left: 160px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cat">
+        <div class="head">
+            <div class="eye"></div>
+        </div>
+        <div class="ear-left"></div>
+        <div class="ear-right"></div>
+        <div class="body"></div>
+        <div class="tail"></div>
+    </div>
+</body>
+</html>

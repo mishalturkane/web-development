@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <script>
+      
+       let n=prompt("Enter a number");
+       let count=0;
+       let arr=[];
+       let i,j;
+       document.write(`There are ${arr.length} Prime numbers in  <br>`);
+       for(i=0;i<n;i++){
+        for(j=2;j<i;j++){
+            if(i%j==0){
+                break;
+            }
+        }
+        if(i==j){
+           arr[i]=i;
+           document.write(`${arr[i]}<br>`);
+        }
+       }
+    </script>
+</body>
+</html>
